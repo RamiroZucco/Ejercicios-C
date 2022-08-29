@@ -16,7 +16,7 @@ int main(void) {
 	int primerNumero;
 	int segundoNumero;
 	int tercerNumero;
-	int numeroDelMedio;
+	int numeroDelMedio=1;
 	printf("Ingrese un numero");
 	scanf("%d", &primerNumero);
 	printf("Ingrese otro numero");

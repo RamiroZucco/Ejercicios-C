@@ -51,6 +51,7 @@ int main(void) {
 	{
 		printf("No existe numero del medio");
 	}
+	scanf("%d", &numeroDelMedio);
 	printf("El numero del medio es: %d", numeroDelMedio);
 	return 0;
 }
