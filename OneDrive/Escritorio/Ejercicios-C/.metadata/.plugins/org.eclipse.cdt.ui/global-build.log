@@ -1,13 +1,6 @@
-Info: Nothing to build for Ejercicio 1.3
-22:04:07 **** Incremental Build of configuration Debug for project Ejercicio 1.3 ****
+22:04:59 **** Incremental Build of configuration Debug for project Ejercicio1.3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 1.3.o" "..\\src\\Ejercicio 1.3.c" 
-..\src\Ejercicio 1.3.c: In function 'main':
-..\src\Ejercicio 1.3.c:28:15: warning: 'numeroDelMedio' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   28 |   primerNumero=numeroDelMedio;
-      |   ~~~~~~~~~~~~^~~~~~~~~~~~~~~
-gcc -o "Ejercicio 1.3.exe" "src\\Ejercicio 1.3.o" 
-22:06:04 **** Incremental Build of configuration Debug for project Ejercicio 1.3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio 1.3.o" "..\\src\\Ejercicio 1.3.c" 
-gcc -o "Ejercicio 1.3.exe" "src\\Ejercicio 1.3.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio1.3.o" "..\\src\\Ejercicio1.3.c" 
+gcc -o Ejercicio1.3.exe "src\\Ejercicio1.3.o" 
+Info: Nothing to build for Ejercicio1.3
+Info: Nothing to build for Ejercicio1.3

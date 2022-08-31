@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : 2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	setbuf(stdout,NULL);
+		int primerNumero;
+		int segundoNumero;
+		int tercerNumero;
+		int numeroMax=0;
+		printf("Ingrese un numero");
+		scanf("%d", &primerNumero);
+		printf("Ingrese otro numero");
+		scanf("%d", &segundoNumero);
+		printf("Ingrese otro numero");
+		scanf("%d", &tercerNumero);
+		if(primerNumero>segundoNumero && primerNumero>tercerNumero)
+		{
+			primerNumero=numeroMax;
+		}
+		else if(segundoNumero>primerNumero && segundoNumero>tercerNumero)
+		{
+			segundoNumero=numeroMax;
+		}
+		else
+		{
+			tercerNumero=numeroMax;
+		}
+		printf("El numero maximo es %d", +numeroMax);
+	return EXIT_SUCCESS;
+}

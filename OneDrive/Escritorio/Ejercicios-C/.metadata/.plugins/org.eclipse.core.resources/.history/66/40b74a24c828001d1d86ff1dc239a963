@@ -1,0 +1,58 @@
+/*
+ ============================================================================
+ Name        : 3.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	setbuf(stdout,NULL);
+	int primerNumero;
+	int segundoNumero;
+	int tercerNumero;
+	int numeroMedio;
+	printf("Ingrese un numero");
+	scanf("%d", &primerNumero);
+	printf("Ingrese otro numero");
+	scanf("%d", &segundoNumero);
+	printf("Ingrese otro numero");
+	scanf("%d", &tercerNumero);
+	if(primerNumero>segundoNumero && primerNumero<tercerNumero)
+	{
+		numeroMedio=primerNumero;
+	}
+	else if(primerNumero<segundoNumero && primerNumero>tercerNumero)
+	{
+		numeroMedio=primerNumero;
+	}
+	else if(segundoNumero>primerNumero && segundoNumero<tercerNumero)
+	{
+		numeroMedio=segundoNumero;
+	}
+	else if(segundoNumero<primerNumero && segundoNumero>tercerNumero)
+	{
+		numeroMedio=segundoNumero;
+	}
+	else if(tercerNumero<primerNumero && tercerNumero>segundoNumero)
+	{
+		numeroMedio=tercerNumero;
+	}
+	else if(tercerNumero>primerNumero && tercerNumero<segundoNumero)
+	{
+		numeroMedio=tercerNumero;
+	}
+	else
+	{
+		printf("no hay numero del medio");
+		break;
+	}
+	printf("El numero del medio es %d", numeroMedio);
+
+	return EXIT_SUCCESS;
+}
