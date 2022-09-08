@@ -1,6 +1,10 @@
-22:04:59 **** Incremental Build of configuration Debug for project Ejercicio1.3 ****
+11:06:57 **** Incremental Build of configuration Debug for project DesafioMenuFuncionesBibliotecas ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio1.3.o" "..\\src\\Ejercicio1.3.c" 
-gcc -o Ejercicio1.3.exe "src\\Ejercicio1.3.o" 
-Info: Nothing to build for Ejercicio1.3
-Info: Nothing to build for Ejercicio1.3
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DesafioMenuFuncionesBibliotecas.o" "..\\src\\DesafioMenuFuncionesBibliotecas.c" 
+gcc -o DesafioMenuFuncionesBibliotecas.exe "src\\DesafioMenuFuncionesBibliotecas.o" "src\\biblio.o" 
+Info: Nothing to build for DesafioMenuFuncionesBibliotecas
+Info: Nothing to build for DesafioMenuFuncionesBibliotecas
+11:13:53 **** Incremental Build of configuration Debug for project DesafioMenuFuncionesBibliotecas ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DesafioMenuFuncionesBibliotecas.o" "..\\src\\DesafioMenuFuncionesBibliotecas.c" 
+gcc -o DesafioMenuFuncionesBibliotecas.exe "src\\DesafioMenuFuncionesBibliotecas.o" "src\\biblio.o" 

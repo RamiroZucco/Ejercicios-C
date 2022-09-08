@@ -1,0 +1,60 @@
+/*
+ ============================================================================
+ Name        : DesafioMenuFuncionesBibliotecas.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "bibilio.h"
+
+int main(void) {
+	setbuf(stdout,NULL);
+	char respuesta;
+	int ret;
+	int banderaInicio=0;
+	int banderaProceso=0;
+	do
+	{
+		ret=menu();
+		switch(ret)
+		{
+			case 1:
+				printf("\nIniciando\n");
+				banderaInicio=1;
+				break;
+			case 2:
+				if(banderaInicio==1)
+				{
+					printf("\nProcesando\n");
+					banderaProceso=1;
+				}
+				else
+				{
+					printf("\nDebe iniciar antes de procesar");
+				}
+				break;
+			case 3:
+				if(banderaInicio==1 && banderaProceso==1)
+				{
+					printf("\nFinalizando");
+				}
+				else
+				{
+					printf("\nDebe iniciar o procesar antes de finalizar");
+				}
+				break;
+			case 4:
+				printf("\nEsta seguro que desea salir? s/n");
+				scanf("%c", &respuesta);
+				break;
+		}
+	}while(ret!=4);
+	return EXIT_SUCCESS;
+}
+

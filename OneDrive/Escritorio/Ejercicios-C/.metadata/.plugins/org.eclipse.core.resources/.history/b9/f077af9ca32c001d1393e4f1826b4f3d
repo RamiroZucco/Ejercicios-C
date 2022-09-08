@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : 1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int mostrarNumero  (int numero);
+int main(void) {
+	int numero;
+	printf("Ingrese un numero");
+	scanf("%d", &numero);
+	numero=mostarNumero(numero);
+	return EXIT_SUCCESS;
+}
+int mostrarNumero (int numero)
+{
+	int resultado;
+	resultado=numero;
+	printf("El numero ingresado es %d",resultado);
+	return resultado;
+}

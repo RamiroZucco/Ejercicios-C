@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : 2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+float pedirFlotante (float numeroIngresado);
+int main(void) {
+	setbuf(stdout,NULL);
+	float numero;
+	pedirFlotante(numero);
+	scanf("%f", numero);
+	printf("El numero ingresado es %f",numero);
+	return EXIT_SUCCESS;
+}
+float pedirFlotante (float numeroIngresado)
+{
+	printf("Ingrese numero");
+	return numeroIngresado;
+}
+

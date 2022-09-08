@@ -1,0 +1,50 @@
+/*
+ ============================================================================
+ Name        : 5.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int restar1(int primerNumero,int segundoNumero);
+int restar2(void);
+
+int main() {
+	setbuf(stdout,NULL);
+	int primerNumero;
+	int segundoNumero;
+	int resultado;
+	printf("Ingrese el primer numero");
+	scanf("%d",&primerNumero);
+	printf("Ingrese el segundo numero");
+	scanf("%d",&segundoNumero);
+	resultado=restar1(primerNumero,segundoNumero);
+	printf("El resultado de la resta es %d",resultado);
+	resultado=restar2();
+	printf("El resultado de la resta es %d",resultado);
+	return 0;
+}
+int restar1(int primerNumero, int segundoNumero)
+{
+	int resultado;
+	resultado=primerNumero-segundoNumero;
+	return resultado;
+}
+int restar2(void)
+{
+	int primerNumero;
+	int segundoNumero;
+	int resultado;
+	printf("\nIngrese el primer numero");
+	scanf("%d",&primerNumero);
+	printf("Ingrese el segundo numero");
+	scanf("%d",&segundoNumero);
+	resultado=primerNumero-segundoNumero;
+	return resultado;
+}
+
+

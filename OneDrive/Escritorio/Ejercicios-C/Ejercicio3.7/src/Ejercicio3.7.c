@@ -1,0 +1,60 @@
+/*
+ ============================================================================
+ Name        : 7.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int sumaResta(int numero1, int numero2, char o);
+
+int main(void) {
+	setbuf(stdout,NULL);
+	int variable1;
+	int variable2;
+	char operacion;
+	int resultado;
+	printf("Ingrese un numero");
+	scanf("%d", &variable1);
+	while(variable1<10 || variable1>100)
+	{
+		printf("Reingrese numero");
+		scanf("%d", &variable1);
+	}
+	printf("Ingrese otro numero");
+	scanf("%d", &variable2);
+	while(variable2<10 || variable2>100)
+	{
+		printf("Reingrese numero");
+		scanf("%d", &variable2);
+	}
+	printf("Ingrese operacion s para sumar y r para restar");
+	scanf("%c", &operacion);
+	while(operacion!='s'|| operacion!='r')
+	{
+		printf("Reingrese operacion");
+		scanf("%c", &operacion);
+	}
+	resultado=sumaResta(variable1,variable2,operacion);
+	printf("El resultado es %d", resultado);
+	return EXIT_SUCCESS;
+}
+int sumaResta(int numero1,int numero2, char o)
+{
+	int suma;
+	int resta;
+	if(o=='s')
+	{
+		suma=numero1+numero2;
+		return suma;
+	}
+	else
+	{
+		resta=numero1-numero2;
+		return resta;
+	}
+}
